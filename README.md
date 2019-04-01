@@ -53,7 +53,7 @@ myResponse.Close();
 ```
 rgb(105,100,123)
 ```   
-![image](https://github.com/Samuelchi861008/Check-Receipt/blob/master/header.JPG) 
+![image](https://github.com/Samuelchi861008/Check-Receipt/blob/master/header.PNG) 
 
 
 頁面背景 : 
@@ -61,7 +61,7 @@ rgb(105,100,123)
 ```
 rgb(208,193,198)
 ```   
-![image](https://github.com/Samuelchi861008/Check-Receipt/blob/master/body.JPG) 
+![image](https://github.com/Samuelchi861008/Check-Receipt/blob/master/body.PNG) 
 
 
 各項目側邊標籤 : 
@@ -69,7 +69,7 @@ rgb(208,193,198)
 ```
 rgb(166,142,118)
 ```   
-![image](https://github.com/Samuelchi861008/Check-Receipt/blob/master/side.JPG) 
+![image](https://github.com/Samuelchi861008/Check-Receipt/blob/master/side.PNG) 
 
 
 按鈕 : 
@@ -77,7 +77,7 @@ rgb(166,142,118)
 ```
 rgb(123,139,111)
 ```   
-![image](https://github.com/Samuelchi861008/Check-Receipt/blob/master/btn.JPG) 
+![image](https://github.com/Samuelchi861008/Check-Receipt/blob/master/btn.PNG) 
 
 
 單選進位選項 radio : 
@@ -85,7 +85,7 @@ rgb(123,139,111)
 ```
 rgb(146,172,209)
 ```   
-![image](https://github.com/Samuelchi861008/Check-Receipt/blob/master/label.JPG) 
+![image](https://github.com/Samuelchi861008/Check-Receipt/blob/master/label.PNG) 
 
 
 每頁主題 : 
@@ -93,4 +93,4 @@ rgb(146,172,209)
 ```
 rgb(177,122,125)
 ```   
-![image](https://github.com/Samuelchi861008/Check-Receipt/blob/master/title.JPG)
+![image](https://github.com/Samuelchi861008/Check-Receipt/blob/master/title.PNG)
