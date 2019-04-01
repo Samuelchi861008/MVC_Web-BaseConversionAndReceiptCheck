@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Title -->
+        <title>Samuel's Projects</title>
+        @Styles.Render("~/Content/css")
+        @Scripts.Render("~/bundles/modernizr")
+
+        <style>
+            /* 設定 body 背景顏色 */
+            body {
+                background-color: rgb(208,193,198) !important;
+                /* 使用莫蘭迪色系 rgb(208,193,198) */
+            }
+
+            /* 設定 navbar 背景顏色 */
+            .navbar {
+                background-color: rgb(105,100,123) !important;
+                /* 使用莫蘭迪色系 rgb(105,100,123) */
+            }
+
+            /* 設定 navbar 最左邊標題的顏色、大小、粗體 */
+            .navbar .navbar-brand {
+                color: #fff !important;
+                font-size: 24px;
+                font-weight: bold;
+                /* 顏色:白色、大小:24pixel、粗細:粗體 */
+            }
+
+            /* 設定 navbar 標籤的顏色、大小、粗體 */
+            .navbar li a {
+                color: #fff !important;
+                font-size: 15px;
+                font-weight: bold;
+                /* 顏色:白色、大小:15pixel、粗細:粗體 */
+            }
+
+            /* 設定 navbar 標籤當被滑鼠碰觸時的變化 */
+            .navbar-nav li a:hover, .navbar-nav li.active a {
+                color: #f4511e !important;
+                background-color: #fff !important;
+                /* 文字顏色:#f4511e、背景顏色:白色 */
+            }
+
+            /* 項目側邊標籤 */
+            .label-warning {
+                background-color: rgb(166,142,118) !important;
+                border-radius: 5px;
+                /* 使用莫蘭迪色系 rgb(166,142,118)、圓角:5px */
+            }
+
+            /* 各個按鈕 */
+            .btn-success {
+                background-color: #7b8b6f !important;
+                border: none;
+                font-weight: bold;
+                /* 使用莫蘭迪色系 #7b8b6f、按鈕無邊框、文字粗體 */
+            }
+
+            /* 選擇進位選項 */
+            .label-info {
+                background-color: rgb(146,172,209) !important;
+                border-radius: 5px;
+                /* 使用莫蘭迪色系 rgb(146,172,209)、圓角:5px */
+            }
+
+            /* 每頁主題標籤 */
+            .label-danger {
+                background-color: rgb(177,122,125) !important;
+                /* 使用莫蘭迪色系 rgb(177,122,125) */
+            }
+        </style>
+    </head>
+    <body>
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <!-- 當螢幕大小較小時，將 navbar 標籤統整集中 -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!-- navbar 最左邊標題 -->
+                    @Html.ActionLink("入口網站", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                </div>
+                <!-- navbar 標籤，若螢幕大小較小時將集中 -->
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li>@Html.ActionLink("首頁", "Index", "Home")</li>
+                        <li>@Html.ActionLink("進制轉換", "Trans", "Home")</li>
+                        <li>@Html.ActionLink("發票兌獎", "Receipt", "Home")</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container body-content">
+            @RenderBody()
+            <footer style="width:100%; height: 20px; position:absolute; bottom:0px; left:0%">
+                <!-- footer copyright -->
+                <a href="https://github.com/Samuelchi861008" target="_blank" style="text-decoration:none;"><font color="#fcfcfc" size="1">Copyright &copy; 2019 Samuel Chi All rights reserved.</font></a>
+            </footer>
+        </div>
+
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")
+        @RenderSection("scripts", required: false)
+    </body>
+</html>

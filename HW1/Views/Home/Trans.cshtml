@@ -1,0 +1,61 @@
+﻿@model  HW1.ViewModel.TransViewModel
+
+@{
+    ViewBag.Title = "進制轉換";
+}
+
+<div align="center">
+    <br />
+    <!-- 網站大標籤顯示目前的頁面的狀態 -->
+    <b class="label label-danger" style="font-size:x-large">@ViewBag.Title</b>
+    <br /><br />
+    @*建立進制轉換表單*@
+    @using (Html.BeginForm("Trans", "Home"))
+     {
+      <table>
+        <!-- 選擇進制種類 -->
+        <tr>
+            <td>
+                @Html.LabelFor(model => model.Type, new { @class = "label label-warning", style = "color:#FFF; font-size:small" })
+            </td>
+            <td>
+                @Html.RadioButtonFor(model => model.Type, "二進位", new { Checked = "checked"})  <label class="label label-info", style="color:#FFF; font-size:x-small">二進位</label>
+                @Html.RadioButtonFor(model => model.Type, "八進位") <label class="label label-info", style="color:#FFF; font-size:x-small">八進位</label>
+                @Html.RadioButtonFor(model => model.Type, "十進位") <label class="label label-info", style="color:#FFF; font-size:x-small">十進位</label>
+                @Html.RadioButtonFor(model => model.Type, "十六進位") <label class="label label-info", style="color:#FFF; font-size:x-small">十六進位</label>
+            </td>
+        </tr>
+
+        <!-- 輸入數值框 -->
+        <tr>
+            <td>
+                @Html.LabelFor(model => model.Sets, new { @class = "label label-warning", style= "color:#FFF; font-size:small" })
+            </td>
+            <td>
+                @Html.TextBoxFor(model => model.Sets, new { @class = "form-control", placeholder = "請輸入欲轉換的數值" })
+                @Html.ValidationMessageFor(model => model.Sets, "", new { @class = "text-danger" })
+            </td>
+         </tr>
+
+        <!-- 顯示結果框 -->
+         <tr>
+            <td>
+                @Html.LabelFor(model => model.Result, new { @class = "label label-warning", style = "color:#FFF; font-size:small" })
+            </td>
+            <td>
+                @Html.TextBoxFor(model => model.Result, new { @class = "form-control", disabled = "disabled"})
+            </td>
+         </tr>
+      </table>
+
+      <!-- 選擇欲轉換進制按鈕 -->
+      <input type="submit" name="btnCompute" value="二進位" class="btn btn-success btn-md" style="border-radius: 50px;">
+      <input type="submit" name="btnCompute" value="八進位" class="btn btn-success btn-md" style="border-radius: 50px;">
+      <input type="submit" name="btnCompute" value="十進位" class="btn btn-success btn-md" style="border-radius: 50px;">
+      <input type="submit" name="btnCompute" value="十六進位" class="btn btn-success btn-md" style="border-radius: 50px;">
+      }
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

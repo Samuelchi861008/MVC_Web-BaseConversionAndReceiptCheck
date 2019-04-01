@@ -1,0 +1,15 @@
+﻿@{
+    ViewBag.Title = "網站首頁";
+}
+
+<div align="center">
+    <br />
+    <!-- 網站大標籤顯示目前的頁面的狀態 -->
+    <b class="label label-danger" style="font-size:xx-large">@ViewBag.Title</b>
+    <br /><br />
+    <h3>
+        <!-- 設定兩個按鈕導入另外兩個頁面 -->
+        @Html.ActionLink("進制轉換", "Trans", "Home", null, new { @class = "btn btn-success btn-lg", style="border-radius: 50px;"})
+        @Html.ActionLink("發票兌獎", "Receipt", "Home", null, new { @class = "btn btn-success btn-lg", style = "border-radius: 50px;" })
+    </h3>
+</div>

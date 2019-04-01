@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sitemanifest>
+  <IisApp path="D:\個人資料\大三\下學期\雲端程式設計\MVC_BinaryTransAndReceipt\HW1\obj\Release\Package\PackageTmp" />
+  <setAcl path="D:\個人資料\大三\下學期\雲端程式設計\MVC_BinaryTransAndReceipt\HW1\obj\Release\Package\PackageTmp" setAclResourceType="Directory" />
+  <setAcl path="D:\個人資料\大三\下學期\雲端程式設計\MVC_BinaryTransAndReceipt\HW1\obj\Release\Package\PackageTmp" setAclUser="anonymousAuthenticationUser" setAclResourceType="Directory" />
+</sitemanifest>

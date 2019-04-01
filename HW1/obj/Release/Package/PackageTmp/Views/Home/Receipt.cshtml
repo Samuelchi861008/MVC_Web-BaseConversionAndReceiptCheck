@@ -1,0 +1,45 @@
+﻿@model  HW1.ViewModel.ReceiptViewModel
+
+@{
+    ViewBag.Title = "發票兌獎";
+}
+
+<div align="center">
+    <br />
+    <!-- 網站大標籤顯示目前的頁面的狀態 -->
+    <a href="http://invoice.etax.nat.gov.tw/" target="_blank" style="text-decoration:none;"><b class="label label-danger" style="font-size:x-large">@ViewBag.Title</b></a>
+    <br /><br />
+    @*建立進制轉換表單*@
+    @using (Html.BeginForm("Receipt", "Home"))
+    {
+          <table>
+              <!-- 輸入數值框 -->
+              <tr>
+                  <td>
+                      @Html.LabelFor(model => model.Sets, new { @class = "label label-warning", style = "color:#FFF; font-size:medium" })
+                  </td>
+                  <td>
+                      @Html.TextBoxFor(model => model.Sets, new { @class = "form-control", placeholder = "請輸入8位發票號碼", minlength = "8", maxlength = "8" })
+                      @Html.ValidationMessageFor(model => model.Sets, "", new { @class = "text-danger" })
+                  </td>
+              </tr>
+
+              <!-- 顯示結果框 -->
+              <tr>
+                  <td>
+                      @Html.LabelFor(model => model.Result, new { @class = "label label-warning", style = "color:#FFF; font-size:medium" })
+                  </td>
+                  <td>
+                      @Html.TextBoxFor(model => model.Result, new { @class = "form-control", disabled = "disabled", style = "color:rgb(238,101,90); font-weight:bold;"})
+                  </td>
+              </tr>
+          </table>
+        
+        <!-- 兌換按鈕 -->
+        <input type="submit" name="btnCompute" value="兌獎" class="btn btn-success btn-lg" style="border-radius: 50px;">
+    }
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
