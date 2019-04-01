@@ -125,6 +125,12 @@ Use IIS run the project
 
 https://blog.xuite.net/gyes.gyes/blog/63294651-c%23+擷取網頁資料 
 
-* Color 
+ 
+* 莫蘭迪色 
 
 https://www.zcool.com.cn/work/ZMjk2NDAyMTI=.html 
+
+
+* 發票資訊
+
+http://invoice.etax.nat.gov.tw/ 
