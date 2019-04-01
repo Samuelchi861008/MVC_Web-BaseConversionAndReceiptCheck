@@ -109,8 +109,10 @@ $ cd MVC_Web-BaseConversionAndReceiptCheck
 ``` 
 
 * Step 3 
+
 Use 『 Visual Studio 』open project
 
 
 * Step 4 
+
 Use IIS run the project
