@@ -4,6 +4,14 @@
 
 # User Interface 
 
-* Home Page 
+* 首頁 
 
 ![image](https://github.com/Samuelchi861008/MVC_Web-BaseConversionAndReceiptCheck/blob/master/home.png) 
+
+* 進制轉換 
+
+![image](https://github.com/Samuelchi861008/MVC_Web-BaseConversionAndReceiptCheck/blob/master/conver.png) 
+
+* 發票兌獎 
+
+![image](https://github.com/Samuelchi861008/MVC_Web-BaseConversionAndReceiptCheck/blob/master/receipt.png)
