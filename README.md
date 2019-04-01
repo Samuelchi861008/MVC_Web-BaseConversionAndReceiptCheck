@@ -20,4 +20,26 @@
 
 * 使用 ASP.NET MVC 
 
-![image](https://github.com/Samuelchi861008/MVC_Web-BaseConversionAndReceiptCheck/blob/master/MVC.png)
+![image](https://github.com/Samuelchi861008/MVC_Web-BaseConversionAndReceiptCheck/blob/master/MVC.png) 
+
+* 運用 C# 爬網頁資料抓取最新一期統一發票獎號 
+
+```C#
+using System.IO;
+using System.Net;
+
+// 連結 財政部稅務入口網
+WebRequest myRequest = WebRequest.Create(@"http://invoice.etax.nat.gov.tw/");
+// 用 GET 方法對網站進行請求
+myRequest.Method = "GET";
+// 得到回應後給 myResponse
+WebResponse myResponse = myRequest.GetResponse();
+// 將回應資料變成 StreamReader
+StreamReader sr = new StreamReader(myResponse.GetResponseStream());
+// 得到的網頁原始碼再從 StreamReader 變成 string
+string result = sr.ReadToEnd();
+// 關閉 StreamReader
+sr.Close();
+// 關閉 WebResponse
+myResponse.Close();
+``` 
