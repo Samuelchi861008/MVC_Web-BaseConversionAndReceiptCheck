@@ -117,3 +117,10 @@ Use 『 Visual Studio 』open project
 ```
 Use IIS run the project
 ```
+
+
+# Reference 
+
+* 爬網頁資料 
+
+https://blog.xuite.net/gyes.gyes/blog/63294651-c%23+擷取網頁資料
