@@ -14,4 +14,10 @@
 
 * 發票兌獎 
 
-![image](https://github.com/Samuelchi861008/MVC_Web-BaseConversionAndReceiptCheck/blob/master/receipt.png)
+![image](https://github.com/Samuelchi861008/MVC_Web-BaseConversionAndReceiptCheck/blob/master/receipt.png) 
+
+# Features 
+
+* 使用 ASP.NET MVC 
+
+![image](https://github.com/Samuelchi861008/MVC_Web-BaseConversionAndReceiptCheck/blob/master/MVC.png)
