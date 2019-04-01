@@ -94,3 +94,23 @@ rgb(146,172,209)
 rgb(177,122,125)
 ```   
 ![image](https://github.com/Samuelchi861008/MVC_Web-BaseConversionAndReceiptCheck/blob/master/title.png)
+
+
+# Use step 
+
+* Step 1 
+```bash
+$ git clone https://github.com/Samuelchi861008/MVC_Web-BaseConversionAndReceiptCheck.git
+``` 
+
+* Step 2 
+```bash
+$ cd MVC_Web-BaseConversionAndReceiptCheck
+``` 
+
+* Step 3 
+Use 『 Visual Studio 』open project
+
+
+* Step 4 
+Use IIS run the project
