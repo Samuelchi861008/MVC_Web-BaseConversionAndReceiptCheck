@@ -123,4 +123,8 @@ Use IIS run the project
 
 * 爬網頁資料 
 
-https://blog.xuite.net/gyes.gyes/blog/63294651-c%23+擷取網頁資料
+https://blog.xuite.net/gyes.gyes/blog/63294651-c%23+擷取網頁資料 
+
+* Color 
+
+https://www.zcool.com.cn/work/ZMjk2NDAyMTI=.html 
