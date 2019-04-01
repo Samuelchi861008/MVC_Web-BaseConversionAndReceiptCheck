@@ -25,9 +25,11 @@
 * 運用 C# 爬網頁資料抓取最新一期統一發票獎號 
 
 ```C#
-using System.IO;
-using System.Net;
-
+//最前面需先呼叫
+using System.IO; // WebRequest、WebResponse
+using System.Net; // StreamReader
+```
+```C#
 // 連結 財政部稅務入口網
 WebRequest myRequest = WebRequest.Create(@"http://invoice.etax.nat.gov.tw/");
 // 用 GET 方法對網站進行請求
