@@ -93,3 +93,4 @@ D:\個人資料\大三\下學期\雲端程式設計\MVC_BinaryTransAndReceipt\HW
 D:\個人資料\大三\下學期\雲端程式設計\MVC_BinaryTransAndReceipt\HW1\obj\Release\HW1.csproj.CopyComplete
 D:\個人資料\大三\下學期\雲端程式設計\MVC_BinaryTransAndReceipt\HW1\obj\Release\HW1.dll
 D:\個人資料\大三\下學期\雲端程式設計\MVC_BinaryTransAndReceipt\HW1\obj\Release\HW1.pdb
+D:\個人資料\大三\下學期\雲端程式設計\MVC_BinaryTransAndReceipt\HW1\obj\Release\HW1.csprojAssemblyReference.cache
